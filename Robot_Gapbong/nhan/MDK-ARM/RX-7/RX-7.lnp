@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"rx-7\startup_stm32f411xe.o"
+"rx-7\main.o"
+"rx-7\stm32f4xx_it.o"
+"rx-7\stm32f4xx_hal_msp.o"
+"rx-7\stm32f4xx_hal_tim.o"
+"rx-7\stm32f4xx_hal_tim_ex.o"
+"rx-7\stm32f4xx_hal_rcc.o"
+"rx-7\stm32f4xx_hal_rcc_ex.o"
+"rx-7\stm32f4xx_hal_flash.o"
+"rx-7\stm32f4xx_hal_flash_ex.o"
+"rx-7\stm32f4xx_hal_flash_ramfunc.o"
+"rx-7\stm32f4xx_hal_gpio.o"
+"rx-7\stm32f4xx_hal_dma_ex.o"
+"rx-7\stm32f4xx_hal_dma.o"
+"rx-7\stm32f4xx_hal_pwr.o"
+"rx-7\stm32f4xx_hal_pwr_ex.o"
+"rx-7\stm32f4xx_hal_cortex.o"
+"rx-7\stm32f4xx_hal.o"
+"rx-7\stm32f4xx_hal_exti.o"
+"rx-7\stm32f4xx_hal_uart.o"
+"rx-7\system_stm32f4xx.o"
+--strict --scatter "RX-7\RX-7.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RX-7.map" -o RX-7\RX-7.axf

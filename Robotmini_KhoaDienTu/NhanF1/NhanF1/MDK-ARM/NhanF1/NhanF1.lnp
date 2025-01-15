@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"nhanf1\startup_stm32f103xb.o"
+"nhanf1\main.o"
+"nhanf1\stm32f1xx_it.o"
+"nhanf1\stm32f1xx_hal_msp.o"
+"nhanf1\stm32f1xx_hal_gpio_ex.o"
+"nhanf1\stm32f1xx_hal_tim.o"
+"nhanf1\stm32f1xx_hal_tim_ex.o"
+"nhanf1\stm32f1xx_hal_uart.o"
+"nhanf1\stm32f1xx_hal.o"
+"nhanf1\stm32f1xx_hal_rcc.o"
+"nhanf1\stm32f1xx_hal_rcc_ex.o"
+"nhanf1\stm32f1xx_hal_gpio.o"
+"nhanf1\stm32f1xx_hal_dma.o"
+"nhanf1\stm32f1xx_hal_cortex.o"
+"nhanf1\stm32f1xx_hal_pwr.o"
+"nhanf1\stm32f1xx_hal_flash.o"
+"nhanf1\stm32f1xx_hal_flash_ex.o"
+"nhanf1\stm32f1xx_hal_exti.o"
+"nhanf1\system_stm32f1xx.o"
+--strict --scatter "NhanF1\NhanF1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "NhanF1.map" -o NhanF1\NhanF1.axf

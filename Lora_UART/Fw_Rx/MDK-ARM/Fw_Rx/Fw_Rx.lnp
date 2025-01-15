@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"fw_rx\startup_stm32f401xc.o"
+"fw_rx\main.o"
+"fw_rx\stm32f4xx_it.o"
+"fw_rx\stm32f4xx_hal_msp.o"
+"fw_rx\stm32f4xx_hal_tim.o"
+"fw_rx\stm32f4xx_hal_tim_ex.o"
+"fw_rx\stm32f4xx_hal_uart.o"
+"fw_rx\stm32f4xx_hal_rcc.o"
+"fw_rx\stm32f4xx_hal_rcc_ex.o"
+"fw_rx\stm32f4xx_hal_flash.o"
+"fw_rx\stm32f4xx_hal_flash_ex.o"
+"fw_rx\stm32f4xx_hal_flash_ramfunc.o"
+"fw_rx\stm32f4xx_hal_gpio.o"
+"fw_rx\stm32f4xx_hal_dma_ex.o"
+"fw_rx\stm32f4xx_hal_dma.o"
+"fw_rx\stm32f4xx_hal_pwr.o"
+"fw_rx\stm32f4xx_hal_pwr_ex.o"
+"fw_rx\stm32f4xx_hal_cortex.o"
+"fw_rx\stm32f4xx_hal.o"
+"fw_rx\stm32f4xx_hal_exti.o"
+"fw_rx\system_stm32f4xx.o"
+--strict --scatter "Fw_Rx\Fw_Rx.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Fw_Rx.map" -o Fw_Rx\Fw_Rx.axf
